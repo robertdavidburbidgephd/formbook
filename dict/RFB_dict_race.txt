@@ -1,0 +1,36 @@
+SFF.CSV Columns Part 1
+We detail  the following field or columns as shown in the image above.
+
+ID              This is the unique RFB reference for each individual race
+
+Course      The racecourse the race took place at
+
+RaceDate   Date that the event took place on
+
+RaceTime  Time  the race was scheduled to start
+
+Race         The race title as seen on a racecard as a race description
+
+Type          The race type c = chase h = hurdle b = NHFlat & blank = a normal Flat race
+
+Class        Currently this is the class allocated as a figure from 1 – 7, with 1 being the top class races and 7 the lower class ones
+
+AgeLimit   Single or a range of restrictions for a race, where the race conditions are set by the age of the horses
+
+Prize         The currency value to the winner of the event. This is by the local currency, Pound for the UK, Euro for Ireland
+
+Ran            Number of horses that took part and competed in a race
+
+Distance    The distance in Miles, Furlongs, Yards that the runners raced over
+
+Yards         The distance in Yards that the runners raced over
+
+Going         The ground that race was run over
+
+Limit           Any race that was restricted to a specific ‘Official’ handicap range or upper limit
+
+WinTime     The recorded time that a race took to run
+
+Seconds     The  recorded time shown in seconds
+
+This basically are the columns of information which represent the race information and next in Part 2 the data about each horse are then given.

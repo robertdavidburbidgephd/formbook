@@ -1,0 +1,41 @@
+SFF.CSV Columns Part 2
+We detail  the following field or columns as shown in the image below.
+
+FPos            Finishing position for each runner
+
+DistBtn        The finishing distance behind the horse which was immediately in front of them
+
+TotalBtn       The total finishing distance behind the winning horse
+
+CardNo        When shown the racecard number for each horse
+
+HorseName  The racehorse name and (country of breeding)
+
+Draw            If starting stalls used, the one a horse started in
+
+SP                Starting Price expressed as a decimal figure. i.e. 6/4 = 1.5
+
+Age               How old the horse was at the time of the  race
+
+Stone           The weight in stones part carried by the horse the 9 in 9-7
+
+Lbs               The weight in pounds part carried by the horse the 7 in 9-7
+
+WeightLBS   Weight carried as total pounds
+
+Favs             Used to denote the Favorite & second Favorite in the betting
+
+Aid               Any aids that the horse wore such as blinkers and if for a first time
+
+Jockey         Name of the Jockey riding the horse
+
+Trainer       Name of the Trainer of the horse
+
+Allow           Any weight allowance the jockey was entitled to claim
+
+Or                 The Official handicappers rating
+
+Comments  Descriptive details on how the horse ran
+
+Part 2 has just detailed each field or column of information regarding each horse which participated in a race
+

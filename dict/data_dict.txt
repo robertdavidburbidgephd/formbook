@@ -1,0 +1,46 @@
+SFF_*.[c|p]sv
+
+delim=[','|'|']
+newline='\r\n'
+
+NOTE commas (and semicolons) embeddeded in double quotes
+
+columnnames=Id,Course,RaceDate,RaceTime,Race,Type,Class,AgeLimit,Prize,Ran,Distance,Yards,Going,Limit,WinTime,Seconds,FPos,DstBtn,TotalBtn,CardNo,HorseName,Draw,Sp,Age,Stone,Lbs,WeightLBS,Favs,Aid,Trainer,Jockey,Allow,OR,Comments
+
+0	Id	numeric(8)	unique race id
+1	Course	char(3-24)	-> Course.txt
+2	RaceDate	char(9)	[24] d-Mon-yy [16-23] dd-Mon-yy
+3	RaceTime	char(5)	[20-24] HH:MM [16-19] HH:MM or HH:MM:SS
+4	Race	char(3-136)	race name
+5	Type	char(1)		[flat] b[umper] h[urdle] c[hase]
+6	Class	numeric(1-2)	1-7, 47 [2 dates Dun], 50 [1 date Gal]
+7	AgeLimit	char(8-10)	-> AgeLimit.txt
+8	Prize	char(1-9)	prize (GBP/EUR?) thousands=''|',' 0|2 dp
+9	Ran	numeric(1-2)	no. runners (1-40)
+10	Distance	char(12)	-> Distance.txt [check encoding]
+11	Yards	integer(3-4)	distance (yards)
+12	Going	char(74)	-> Going.txt
+13	Limit	numeric(0-3)	4-660 [OR limit??]
+14	WinTime	char(0-10)	MMm SSs [check encoding]
+15	Seconds	numeric(0-6.2)	winning time (seconds)
+16	FPos	char(0-2)	finishing position (integer|char(2))
+17	DstBtn	char(0-4)	distance beaten (integer+fraction|char(4))
+18	TotalBtn	char(0-5)	total beaten (numeric(5.2)|'Null')
+19	CardNo	integer(0-2)	card no.
+20	HorseName char(2-27)	horse name
+21	Draw	integer(0-2)	draw
+22	Sp	numeric(0-11.9)	SP
+23	Age	integer(1-2)	age
+24	Stone	integer(1-2)	weight: stones [7-12]
+25	Lbs	integer(1-2)	weight: pounds [0-13]
+26	WeightLBS	integer(3,5)	weight (pounds) [105-179,10011]
+27	Favs	char(0,3-5)	[C|J][2][fF]av
+28	Aid	char(0-15)	[btvph...][1] [check encoding]
+29	Trainer	char(0,10-38)	trainer name
+30	Jockey	char(0,5-30)	jockey name
+31	Allow	char(0-2)	allowance (1-10)
+32	OR	integer(0-3)	official rating (0-180)
+33	Comments	char(0-255)	comments [check encoding]
+
+
+

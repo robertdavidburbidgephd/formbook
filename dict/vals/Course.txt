@@ -1,0 +1,152 @@
+Aintree
+Amiens (FR)
+Angers (FR)
+Arlington park (USA)
+Ascot
+Auteuil (FR)
+Ayr
+Baden-baden (GER)
+Ballinrobe (IRE)
+Bangor
+Bangor-On-Dee
+Bath
+Bellewstown (IRE)
+Belmont park (USA)
+Bendigo (AUS)
+Beverley
+Bordeaux le bouscat (FR)
+Brighton
+Bro park (SWE)
+Cagnes-sur-mer (FR)
+Cagnes-Sur-Mer (FR)
+Capannelle (ITY)
+Carlisle
+Cartmel
+Catterick
+Caulfield (AUS)
+Chantilly (FR)
+Chelmsford City
+Cheltenham
+Chepstow
+Chester
+Clairefontaine (FR)
+Clonmel (IRE)
+Cologne (GER)
+Compiegne (FR)
+Cork (IRE)
+Curragh (IRE)
+Deauville (FR)
+Dieppe (FR)
+Doha (QA)
+Doncaster
+Dortmund (GER)
+Downpatrick (NI)
+Down Royal (NI)
+Dundalk (IRE)
+Dusseldorf (GER)
+Enghien (FR)
+Epsom Downs
+Exeter
+Fairyhouse (IRE)
+Fakenham
+Ffos Las
+Flemington (AUS)
+Fontainebleau (FR)
+Fontwell
+Frauenfeld (SWI)
+Galway (IRE)
+Geelong (AUS)
+Ghlin (BEL)
+Goodwood
+Gowran Park (IRE)
+Hamburg (GER)
+Hamilton
+Hanover (GER)
+Haydock
+Hereford
+Hexham
+Hoppegarten (GER)
+Huntingdon
+Jagersro (SWE)
+Keeneland (USA)
+Kelso
+Kempton
+Kilbeggan (IRE)
+Killarney (IRE)
+Laytown (IRE)
+Le croise-laroche (FR)
+Leicester
+Le lion-d'angers (FR)
+Leopardstown (IRE)
+Le Touquet (FR)
+Limerick (IRE)
+Lingfield
+Listowel (IRE)
+Ludlow
+Lyon parilly (FR)
+Maisons-laffitte (FR)
+Market Rasen
+Merano (ITY)
+Meslay-du-maine (FR)
+Meydan (UAE)
+Morlaix (FR)
+Moulins (FR)
+Munich (GER)
+Musselburgh
+Naas (IRE)
+Nantes (FR)
+Navan (IRE)
+Newbury
+Newcastle
+Newmarket
+Newton Abbot
+Nottingham
+Ovrevoll (NOR)
+Pau (FR)
+Perth
+Plumpton
+Pontefract
+Punchestown (IRE)
+Redcar
+Ripon
+Rochefort-sur-loire (FR)
+Roscommon (IRE)
+Saint-cloud (FR)
+Saint-Cloud (FR)
+Salisbury
+Sandown
+Sandown (AUS)
+San sebastian (SPA)
+San Sebastian (SPA)
+San siro (ITY)
+Santa anita (USA)
+Sedgefield
+Seoul (KOR)
+Sha tin (HK)
+Sha Tin (HK)
+Sille-le-guillaume (FR)
+Sligo (IRE)
+Southwell
+St moritz (SWI)
+St Moritz (SWI)
+Stratford
+Taunton
+Thirsk
+Thurles (IRE)
+Tipperary (IRE)
+Toulouse (FR)
+Towcester
+Tramore (IRE)
+Uttoxeter
+Veliefendi (TUR)
+Vichy (FR)
+Warwick
+Wetherby
+Wexford (IRE)
+Wincanton
+Windsor
+Wolverhampton
+Woodbine (CAN)
+Worcester
+Yarmouth
+York

@@ -1,0 +1,1 @@
+dfc = df[df.Ch & (df.FPos=='1')][['CourseName','HorseName']]
