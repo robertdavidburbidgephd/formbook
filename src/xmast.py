@@ -2,9 +2,18 @@ import pandas as pd
 import seaborn as sns
 import numpy as np
 from matplotlib import pyplot as plt
+import argparse
 
 ## command-line args
 # python src/xmast_example.py <CourseName> ... ???
+
+## named args or config ... <- multiple dist/going , defaults
+parser = argparse.ArgumentParser(
+                    prog='xmast',
+                    description='Create drawbias xmast chart',
+                    epilog='')
+parser.add_argument('-C', '--coursename', '--course_name', '--CourseName')
+parser.add_argument('foo', nargs='+')
 
 ## Get the formbook data
 fpath = 'data/prep/'
