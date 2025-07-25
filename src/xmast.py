@@ -15,6 +15,8 @@ parser = argparse.ArgumentParser(
 parser.add_argument('-c', '--coursename')
 parser.add_argument('-d', '--distance', nargs='+')
 parser.add_argument('-g', '--going', nargs='+')
+parser.add_argument('-m', '--min_ave_supp')
+parser.add_argument('-s', '--stalls')
 args = parser.parse_args()
 
 course_name = args.coursename
@@ -24,25 +26,41 @@ going_dict = {'f': 'firm', 'gf': 'goodtofirm', 'stf': 'standard/fast', 'gd': 'go
              'gs': 'goodtosoft', 'stsl': 'standard/slow', 'ysft': 'yieldingtosoft',
              'sft': 'soft', 'slw': 'slow', 'sfthy': 'softtoheavy', 'hy': 'heavy'}
 going = [ going_dict[x] for x in args.going ]
+if args.min_ave_supp:
+    min_ave_supp = int(args.min_ave_supp)
+else:
+    min_ave_supp = 2
+if args.stalls:
+    stalls = args.stalls
+else:
+    stalls = 'centre'
+
 
 # print(course_name)
 # print(dist)
 # print(going)
 
 
-
 ## Get the formbook data
 fpath = 'data/prep/'
 dfile = 'form_data_v2.0.csv'
 
-form_df = pd.read_csv( fpath + dfile, header=0, parse_dates=True )
+### speed this up, eg. 
+# by preselecting rows and columns into separate files by coursename, '--filename', awk
+
+### or by maintaining a mysql db service
+
+### filter on args and select columns
+form_df = pd.read_csv( fpath + dfile, header=0, parse_dates=True , sep=',' , engine='c' ,
+                        usecols=['Type','Draw','RaceId','Posn','Distance','Going1',
+                                 'CourseName','ReturnWin','ReturnPlace','Sp'])
 
 ## Prep the formbook data
 from formbook_defs import prexmast
 prexmast_df = prexmast(form_df)
 
 ## Call xmast
-min_ave_supp = 2
+# min_ave_supp = 2
 # course_name = 'Sandown'
 
 # dist = [ 7*220 , 8*220 ]
@@ -50,9 +68,7 @@ min_ave_supp = 2
 
 from formbook_defs import xmast
 hm_data, hm_supp, hm_annot_index, hm_annot_supp = xmast(prexmast_df, course_name, dist=dist, going=going, 
-                                                        stalls='far side', min_ave_supp=min_ave_supp)
-
-""" def plotxmast """
+                                                        stalls=stalls, min_ave_supp=min_ave_supp)
 
 plt.figure()
 plt.title('Draw Bias (Return), ' + course_name + ' (' + str(dist) + 'yards) ' + str(going))
