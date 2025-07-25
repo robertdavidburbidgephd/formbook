@@ -3,6 +3,7 @@ import seaborn as sns
 import numpy as np
 from matplotlib import pyplot as plt
 import argparse
+import os
 
 ## command-line args
 # python src/xmast_example.py <CourseName> ... ???
@@ -35,36 +36,22 @@ if args.stalls:
 else:
     stalls = 'centre'
 
-
-# print(course_name)
-# print(dist)
-# print(going)
-
-
 ## Get the formbook data
 fpath = 'data/prep/'
 dfile = 'form_data_v2.0.csv'
 
-### speed this up, eg. 
-# by preselecting rows and columns into separate files by coursename, '--filename', awk
+if os.path.exists( fpath + course_name + '.pqt' ):
+    prexmast_df = pd.read_parquet(fpath + course_name + '.pqt')
+else:
+    form_df = pd.read_csv( fpath + dfile, header=0, parse_dates=True , sep=',' , engine='c' ,
+                            usecols=['Type','Draw','RaceId','Posn','Distance','Going1',
+                                     'CourseName','ReturnWin','ReturnPlace','Sp'])
+    form_df = form_df[(form_df.CourseName==course_name)]
 
-### or by maintaining a mysql db service
-
-### filter on args and select columns
-form_df = pd.read_csv( fpath + dfile, header=0, parse_dates=True , sep=',' , engine='c' ,
-                        usecols=['Type','Draw','RaceId','Posn','Distance','Going1',
-                                 'CourseName','ReturnWin','ReturnPlace','Sp'])
-
-## Prep the formbook data
-from formbook_defs import prexmast
-prexmast_df = prexmast(form_df)
-
-## Call xmast
-# min_ave_supp = 2
-# course_name = 'Sandown'
-
-# dist = [ 7*220 , 8*220 ]
-# going = ['good', 'goodtosoft']
+    ## Prep the formbook data
+    from formbook_defs import prexmast
+    prexmast_df = prexmast(form_df)
+    prexmast_df.to_parquet(fpath + course_name + '.pqt')
 
 from formbook_defs import xmast
 hm_data, hm_supp, hm_annot_index, hm_annot_supp = xmast(prexmast_df, course_name, dist=dist, going=going, 
