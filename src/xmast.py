@@ -12,8 +12,24 @@ parser = argparse.ArgumentParser(
                     prog='xmast',
                     description='Create drawbias xmast chart',
                     epilog='')
-parser.add_argument('-C', '--coursename', '--course_name', '--CourseName')
-parser.add_argument('foo', nargs='+')
+parser.add_argument('-c', '--coursename')
+parser.add_argument('-d', '--distance', nargs='+')
+parser.add_argument('-g', '--going', nargs='+')
+args = parser.parse_args()
+
+course_name = args.coursename
+dist = [ float(x)*220 for x in args.distance ]
+going_dict = {'f': 'firm', 'gf': 'goodtofirm', 'stf': 'standard/fast', 'gd': 'good',
+             'st': 'standard', 'gdy': 'goodtoyielding', 'y': 'yielding',
+             'gs': 'goodtosoft', 'stsl': 'standard/slow', 'ysft': 'yieldingtosoft',
+             'sft': 'soft', 'slw': 'slow', 'sfthy': 'softtoheavy', 'hy': 'heavy'}
+going = [ going_dict[x] for x in args.going ]
+
+# print(course_name)
+# print(dist)
+# print(going)
+
+
 
 ## Get the formbook data
 fpath = 'data/prep/'
@@ -27,10 +43,10 @@ prexmast_df = prexmast(form_df)
 
 ## Call xmast
 min_ave_supp = 2
-course_name = 'Sandown'
+# course_name = 'Sandown'
 
-dist = [ 7*220 , 8*220 ]
-going = ['good', 'goodtosoft']
+# dist = [ 7*220 , 8*220 ]
+# going = ['good', 'goodtosoft']
 
 from formbook_defs import xmast
 hm_data, hm_supp, hm_annot_index, hm_annot_supp = xmast(prexmast_df, course_name, dist=dist, going=going, 
