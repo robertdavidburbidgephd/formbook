@@ -14,6 +14,7 @@ parser = argparse.ArgumentParser(
                     description='Create drawbias xmast chart',
                     epilog='')
 parser.add_argument('-c', '--coursename')
+parser.add_argument('-i', '--index')
 parser.add_argument('-d', '--distance', nargs='+')
 parser.add_argument('-g', '--going', nargs='+')
 parser.add_argument('-m', '--min_ave_supp')

@@ -6,6 +6,9 @@ data/
 ._data
 formbookdata.tgz
 
+# anaconda
+notebooks/anaconda_projects/
+
 # outputs
 out/
 *.png
