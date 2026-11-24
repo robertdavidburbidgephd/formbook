@@ -1,31 +1,57 @@
 Ascot
 Ayr
+Ballinrobe (IRE)
 Bath
+Bellewstown (IRE)
 Beverley
 Brighton
 Carlisle
 Catterick
+Chelmsford City
 Chepstow
 Chester
+Clonmel (IRE)
+Cork (IRE)
+Curragh (IRE)
 Doncaster
+Down Royal (NI)
+Dundalk (IRE)
+Epsom Downs
+Fairyhouse (IRE)
+Ffos Las
+Galway (IRE)
 Goodwood
+Gowran Park (IRE)
 Hamilton
 Haydock
 Kempton
+Killarney (IRE)
+Laytown (IRE)
 Leicester
+Leopardstown (IRE)
+Limerick (IRE)
 Lingfield
+Listowel (IRE)
 Musselburgh
+Naas (IRE)
+Navan (IRE)
 Newbury
 Newcastle
 Newmarket
 Nottingham
 Pontefract
+Punchestown (IRE)
 Redcar
 Ripon
+Roscommon (IRE)
 Salisbury
 Sandown
+Sligo (IRE)
 Southwell
 Thirsk
+Thurles (IRE)
+Tipperary (IRE)
+Tramore (IRE)
 Wetherby
 Windsor
 Wolverhampton
