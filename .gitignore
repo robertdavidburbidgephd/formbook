@@ -1,5 +1,6 @@
 # OSX
 .DS_Store
+._*
 
 # data
 data/
@@ -11,7 +12,10 @@ notebooks/anaconda_projects/
 
 # outputs
 out/
-*.png
+#*.png
+
+# temp
+tmp/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
